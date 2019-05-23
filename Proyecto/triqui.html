@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #draggable { width: 100px; height: 100px; padding: 0.5em; }
+  .celda{background: lightblue;}
+
+  </style>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <script>
+  $( function() {
+    $( "#draggable1" ).draggable({ revert: "invalid" });
+  } );
+
+  $( function() {
+    $( "#draggable2" ).draggable({ revert: "invalid" });
+  } );
+
+  $( function() {
+    $( "#draggable3" ).draggable({ revert: "invalid" });
+  } );
+
+  $( function() {
+    $( "#draggable4" ).draggable({ revert: "invalid" });
+  } );
+
+
+   $( function() {
+    $( "#draggable5" ).draggable({ revert: "invalid" });
+  } );
+
+  $( function() {
+    $( "#draggable6" ).draggable({ revert: "invalid" });
+  } );
+
+  $( function() {
+    $( "#draggable7" ).draggable({ revert: "invalid" });
+  } );
+
+  $( function() {
+    $( "#draggable8" ).draggable({ revert: "invalid" });
+  } );
+
+
+ $( function() {
+    $( "#draggable9" ).draggable({ revert: "invalid" });
+  } );
+
+  $( function() {
+    $( "#draggable10" ).draggable({ revert: "invalid" });
+  } );
+
+$( function() {
+  $( "#droppable1" ).droppable({
+    classes: {"ui-droppable-active": "ui-state-active",
+      "ui-droppable-hover": "ui-state-hover"},
+    drop: function( event, ui ) {
+      $( this )
+        .addClass( "ui-state-highlight" )
+        .find( "p" )
+          .html( "Dropped!" );
+    }
+  });
+
+
+$( "#droppable2" ).droppable({
+    classes: {"ui-droppable-active": "ui-state-active",
+      "ui-droppable-hover": "ui-state-hover"},
+    drop: function( event, ui ) {
+      $( this )
+        .addClass( "ui-state-highlight" )
+        .find( "p" )
+          .html( "Dropped!" );
+    }
+  });
+
+$( "#droppable3" ).droppable({
+    classes: {"ui-droppable-active": "ui-state-active",
+    "ui-droppable-hover": "ui-state-hover"},
+    drop: function( event, ui ) {
+      $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Dropped!" );
+      }
+});
+
+$( "#droppable4" ).droppable({
+    classes: {"ui-droppable-active": "ui-state-active",
+      "ui-droppable-hover": "ui-state-hover"},
+    drop: function( event, ui ) {
+      $( this )
+        .addClass( "ui-state-highlight" )
+        .find( "p" )
+            .html( "Dropped!" );
+    }
+    });
+
+$( "#droppable5" ).droppable({
+        classes: {"ui-droppable-active": "ui-state-active",
+          "ui-droppable-hover": "ui-state-hover"},
+        drop: function( event, ui ) {
+          $( this )
+            .addClass( "ui-state-highlight" )
+            .find( "p" )
+              .html( "Dropped!" );
+        }
+      });
+
+$( "#droppable6" ).droppable({
+            classes: {"ui-droppable-active": "ui-state-active",
+              "ui-droppable-hover": "ui-state-hover"},
+            drop: function( event, ui ) {
+              $( this )
+                .addClass( "ui-state-highlight" )
+                .find( "p" )
+                  .html( "Dropped!" );
+            }
+          });
+$( "#droppable7" ).droppable({
+  classes: {"ui-droppable-active": "ui-state-active",
+  "ui-droppable-hover": "ui-state-hover"},
+      drop: function( event, ui ) {
+                $( this )
+                  .addClass( "ui-state-highlight" )
+                  .find( "p" )
+                    .html( "Dropped!" );
+              }
+            });
+$( "#droppable8" ).droppable({
+                classes: {"ui-droppable-active": "ui-state-active",
+                  "ui-droppable-hover": "ui-state-hover"},
+                drop: function( event, ui ) {
+                  $( this )
+                    .addClass( "ui-state-highlight" )
+                    .find( "p" )
+                      .html( "Dropped!" );
+                }
+              });
+                    $( "#droppable9" ).droppable({
+                  classes: {"ui-droppable-active": "ui-state-active",
+                    "ui-droppable-hover": "ui-state-hover"},
+                  drop: function( event, ui ) {
+                    $( this )
+                      .addClass( "ui-state-highlight" )
+                      .find( "p" )
+                        .html( "Dropped!" );
+                    }
+                  });
+                  } );
+
+  </script>
+</head>
+<body>
+	<table border = "1" align="left" border = "None">
+
+    <tr>
+        <td width= "100" height="100" class="celda" id="droppable1"></td>
+        <td width= "100" height="100" class="celda" id="droppable2"></td>
+        <td width= "100" height="100" class="celda" id="droppable3"></td>
+    </tr>
+
+    <tr>
+        <td width= "100" height="100" class="celda" id="droppable4"></td>
+        <td width= "100" height="100" class="celda" id="droppable5"></td>
+        <td width= "100" height="100" class="celda" id="droppable6"></td>
+    </tr>
+
+    <tr>
+        <td width= "100" height="100" class="celda" id="droppable7"></td>
+        <td width= "100" height="100" class="celda" id="droppable8"></td>
+        <td width= "100" height="100" class="celda" id="droppable9"></td>
+    </tr>
+
+	</table>
+
+
+    <div class="row" height="100" width= "100">
+        <div class="col">
+            <img  id="draggable6" class="ui-widget-content"  src="x.png" width= "100" height="100" style="position:absolute; " >
+            <img  id="draggable7" class="ui-widget-content"  src="x.png" width= "100" height="100" style="position:absolute; " >
+            <img  id="draggable8" class="ui-widget-content"  src="x.png" width= "100" height="100" style="position:absolute; " >
+            <img  id="draggable9" class="ui-widget-content"  src="x.png" width= "100" height="100" style="position:absolute; " >
+            <img  id="draggable10" class="ui-widget-content"  src="x.png" width= "100" height="100" style="position:absolute; " >
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="row" height="100" width= "100" >
+        <div class="col">
+
+            <img  id="draggable1" class="ui-widget-content"  src="o.png" width= "100" height="100" style="position:absolute; " >
+            <img  id="draggable2" class="ui-widget-content"  src="o.png" width= "100" height="100" style="position:absolute; " >
+            <img  id="draggable3" class="ui-widget-content" src="o.png" width= "100" height="100" style="position:absolute; " >
+            <img  id="draggable4" class="ui-widget-content"  src="o.png" width= "100" height="100" style="position:absolute; " >
+            <img  id="draggable5" class="ui-widget-content"  src="o.png" width= "100" height="100" style="position:absolute; " >
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
